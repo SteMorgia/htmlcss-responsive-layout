@@ -21,6 +21,7 @@
 .debug .box{
     height: 80px;
     padding: 1rem;
+    background-color: var(--primary-color-light);
 }
 
 
@@ -56,6 +57,16 @@
     background-color: var(--primary-color-light);
     border-radius: 30px;
 }
+
+/*regole planning*/
+#planning{
+    background-color: var(--secondary-color);
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+#planning .column{
+    margin:2rem;
+}
 /*media query*/
 @media screen and (min-width: 768px) {
     .container{
@@ -86,6 +97,13 @@
     #intro .card:first-child .box{
         width: 50%;
         height: 100%;
+    }
+    #planning .columns{
+        display:flex;
+        align-items:flex-end;
+    }
+    #planning .column{
+        width: calc(50% - 4rem);
     }
 }
 
