@@ -4,3 +4,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*regole root*/
+:root {
+    --primary-color: #3684fd;
+    --primary-color-light: #b5ddff;
+    --secondary-color:97
+
+}
+/*media query*/
+@media screen and (min-width: 768px) {
+    header .container{
+        width: 100%;
+    }
+}
+
+/* regole header*/
+header{
+    background-color: blue;
+}
+header .container{
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container .box{
+    background-color: aquamarine;
+    padding: 1rem;
+    margin: 0px 0.7rem;
+}
