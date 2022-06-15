@@ -77,7 +77,22 @@
 #testimonial .card-image{
     margin: 1rem;
 }
+
+/*regole benefits*/
+#benefits{
+    background-color: var(--secondary-color);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+#benefits .card {
+    margin-bottom: 1.5rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    background-color: var(--primary-color-light);
+    border-radius: 30px;
+}
 /*media query*/
+/*TABLET*/
 @media screen and (min-width: 768px) {
     .container{
         max-width: 750px;
@@ -105,8 +120,15 @@
         flex-shrink: 0;
         margin: 0 4rem 0 0;
     }
+    #benefits .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #benefits .card{
+        width: calc(50% - 1.5rem);
+    }
 }
-
+/*DESKTOP*/
 @media screen and (min-width: 992px) {
     .container{
         max-width: 940px;
@@ -125,8 +147,11 @@
     #planning .column{
         width: calc(50% - 4rem);
     }
+    #benefits .card{
+        width: calc(33.333% - 1.5rem);
+    }
 }
-
+/*DESKTOP GRANDE*/
 @media screen and (min-width: 1200px) {
     .container{
         max-width: 1140px;
