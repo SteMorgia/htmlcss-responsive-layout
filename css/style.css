@@ -93,6 +93,19 @@
     background-color: var(--primary-color-light);
     border-radius: 30px;
 }
+
+/*regole about us*/
+#aboutus{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+#aboutus .card{
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+#aboutus .card:first-child{
+    margin-bottom: 1rem;
+}
 /*media query*/
 /*TABLET*/
 @media screen and (min-width: 768px) {
@@ -129,7 +142,12 @@
     #benefits .card{
         width: calc(50% - 1.5rem);
     }
-}
+    #aboutus .container{
+        display: flex;
+    }
+    #aboutus .card{
+        width: calc(50% - 1.5rem);
+    }
 /*DESKTOP*/
 @media screen and (min-width: 992px) {
     .container{
@@ -151,6 +169,12 @@
     }
     #benefits .card{
         width: calc(33.333% - 1.5rem);
+    }
+    #aboutus .card:first-child {
+        width: calc(80% - 1.5rem);
+    }
+    #aboutus .card:last-child {
+        width: calc(20% - 1.5rem);
     }
 }
 /*DESKTOP GRANDE*/
