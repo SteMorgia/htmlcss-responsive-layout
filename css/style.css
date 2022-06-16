@@ -57,6 +57,9 @@ html{
 .text-violet {
     color: var(--secondary-color);
 }
+.text-yellow {
+    color: var(--yellow-color);
+}
 .btn {
     padding: 0.5rem;
     border-radius: 15px;
@@ -284,7 +287,6 @@ html{
     line-height: 30px;
     margin-bottom: 40px;
 }
-
 #aboutus .card-image{
     margin: 1rem;
     width: 10rem;
@@ -301,6 +303,33 @@ html{
     line-height: 35px;
     font-size: 26px;
 }
+
+/*regole get started*/
+#get-started{
+    background-color: var(--secondary-color);
+
+}
+#get-started .container {
+    padding-top: 5rem;
+}
+#get-started .container h2{
+    margin-bottom: 2rem;
+}
+#get-started .container .text-yellow{
+    font-weight: bolder;
+    font-size: 70px;
+    margin-bottom:2rem;
+}
+#get-started .container .text-white{
+    line-height: 25px;
+    margin-bottom: 2rem;
+}
+#get-started .container .btn{
+    margin: auto;
+}
+
+
+
 /*media query*/
 /*TABLET*/
 @media screen and (min-width: 768px) {
