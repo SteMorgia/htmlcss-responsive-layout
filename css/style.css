@@ -219,7 +219,7 @@ html{
     object-position: center;
 }
 #testimonial .card-text{
-    margin: 2rem auto;0
+    margin: 2rem auto;
 }
 #testimonial .card-text p{
     line-height: 25px;
@@ -284,6 +284,7 @@ html{
     line-height: 30px;
     margin-bottom: 40px;
 }
+
 #aboutus .card-image{
     margin: 1rem;
     width: 10rem;
@@ -295,6 +296,10 @@ html{
     object-fit: cover;
     border-radius: 50%;
     object-position: center;
+}
+#aboutus .phrase{
+    line-height: 35px;
+    font-size: 26px;
 }
 /*media query*/
 /*TABLET*/
@@ -391,7 +396,7 @@ html{
     }
     #aboutus .card:last-child {
         width: calc(20% - 1.5rem);
-    }
+        
 }
 /*DESKTOP GRANDE*/
 @media screen and (min-width: 1200px) {
