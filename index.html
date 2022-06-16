@@ -5,14 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Responsive</title>
 </head>
 <body class="debug">
     <!--inizio header-->
     <header class="site-header padx-2">
         <div class="container flex space-between align-center">
-            <div class="box">LOGO</div>
-            <div class="box">NAV</div>
+            <img src="img/logo.png" alt="logo">
+            <div class="nav">
+                <ul class="flex">
+                    <li><a class="text-white" href="#planning">Planning</a></li>
+                    <li><a class="text-white" href="#testimonial">Testimonials</a></li>
+                    <li><a class="text-white" href="#benefits">Features</a></li>
+                    <li><a class="text-white" href="#aboutus">About Us</a></li>
+                    <li><a class="btn btn-white text-black" href="#">Get Started</a></li>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
     </header>
     <!--inizio main-->
@@ -23,28 +33,42 @@
             <div class="container">
                 <div class="cards">
                     <div class="card">
-                        <div class="box">CONTENT</div>
-                        <div class="box">CONTENT</div>
+                        <div class="info">
+                            <h3 class="text-blue">Get a demo application</h3>
+                            <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas mollitia tenetur veritatis porro suscipit tempora soluta, amet beatae. Odit, repellendus.</p>
+                            <span class="btn btn-blue"><a class="text-white" href="#"><i class="fa-brands fa-apple text-white"></i>App Store</a></span>
+                        </div>
+                        <div class="img">
+                            <img src="img/phone.png" alt="phone">
+                        </div>
                     </div>
-                    <div class="card">
-                        <div class="box">CONTENT</div>
-                        <div class="box">CONTENT</div>
-                        <div class="box">CONTENT</div>
+                    <div class="card small-card">
+                        <div class="text-center">
+                            <i class="fa-solid fa-file-code text-blue"></i>
+                            <h3 class="text-blue">Clean Code</h3>
+                            <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, et hic! Assumenda, excepturi eveniet. Vitae quia et ullam quos aliquam!</p>
+                        </div>
                     </div>
-                    <div class="card">
-                        <div class="box">CONTENT</div>
-                        <div class="box">CONTENT</div>
-                        <div class="box">CONTENT</div>
+                    <div class="card small-card">
+                        <div class="text-center">
+                            <i class="fa-solid fa-compass-drafting text-blue"></i>
+                            <h3 class="text-blue">Web Design</h3>
+                            <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, et hic! Assumenda, excepturi eveniet. Vitae quia et ullam quos aliquam!</p>
+                        </div>
                     </div>
-                    <div class="card">
-                        <div class="box">CONTENT</div>
-                        <div class="box">CONTENT</div>
-                        <div class="box">CONTENT</div>
+                    <div class="card small-card">
+                        <div class="text-center">
+                            <i class="fa-solid fa-laptop-code text-blue"></i>
+                            <h3 class="text-blue">Development</h3>
+                            <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, et hic! Assumenda, excepturi eveniet. Vitae quia et ullam quos aliquam!</p>
+                        </div>
                     </div>
-                    <div class="card">
-                        <div class="box">CONTENT</div>
-                        <div class="box">CONTENT</div>
-                        <div class="box">CONTENT</div>
+                    <div class="card small-card">
+                        <div class="text-center">
+                            <i class="fa-solid fa-bullhorn text-blue"></i>
+                            <h3 class="text-blue">Branding</h3>
+                            <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, et hic! Assumenda, excepturi eveniet. Vitae quia et ullam quos aliquam!</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -54,13 +78,16 @@
         <section id="planning">
             <div class="container columns">
                 <div class="column">
-                    <div class="box">CONTENT</div>
-                    <div class="box">CONTENT</div>
-                    <div class="box">CONTENT</div>
+                    <div class="img-container text-center">
+                        <img src="img/planning1.png" alt="planning 1">
+                    </div>
+                    <h2 class="text-white">Strategic Planning</h2>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea facere natus est exercitationem? Quae eaque modi nostrum ab optio! Aliquam, minus. Voluptas est ratione harum dicta debitis dolor nemo fuga illo? Cumque, iure? Repudiandae eius tempore voluptas vel suscipit dicta?</p>
                 </div>
-                <div class="column">
-                    <div class="box">CONTENT</div>
-                    <div class="box">CONTENT</div>
+                <div class="column backgr-white text-center">
+                    <img class="planning2" src="img/planning2.png" alt="planning 2">
+                    <span class="text-black"><strong>App Development</strong></span>
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum officia earum omnis ex deleniti saepe dicta deserunt laboriosam necessitatibus ipsam.</i></p>
                 </div>
             </div>
         </section>

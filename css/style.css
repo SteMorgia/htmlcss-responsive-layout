@@ -26,6 +26,9 @@
 
 
 /* regole comuni*/
+html{
+    font-family: sans-serif;
+}
 .container{
     max-width: 600px;
     margin: auto;
@@ -42,12 +45,58 @@
 .padx-2 {
     padding: 0 2rem;
 }
+.text-white {
+    color: var(--white-color);
+}
+.text-black {
+    color: var(--text-color);
+}
+.text-blue {
+    color: var(--primary-color);
+}
+.text-violet {
+    color: var(--secondary-color);
+}
+.btn {
+    padding: 0.5rem;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.btn-white{
+    background-color: #fff;
+}
+.btn-blue{
+    background-color: var(--primary-color);
+}
+.text-center{
+    text-align: center;
+}
+.backgr-white{
+    background-color: var(--white-color);
+}
+
 
 /*regole header*/ 
 .site-header{
     background-color: var(--primary-color);
     width: 100%;
     margin-bottom: 3rem;
+}
+.site-header ul{
+    list-style-type: none;
+}
+.site-header ul li .text-white{
+    text-decoration: none;
+    padding: 1rem;
+}
+.site-header img{
+    padding: 1rem 0;
+}
+.site-header ul{
+    display: none;
+}
+.site-header i{
+    color: var(--white-color);
 }
 
 
@@ -59,6 +108,43 @@
     background-color: var(--primary-color-light);
     border-radius: 30px;
 }
+#intro .info{
+    padding: 1.5rem;
+}
+#intro .text-black{
+    margin: 2rem 0rem;
+    line-height: 30px;
+}
+#intro .text-center .text-black{
+    padding: 0 15px;
+}
+#intro .cards:not:first-child{
+    padding-bottom: 2rem;
+}
+#intro .btn a {
+    padding: 5px 60px;
+    text-decoration: none;
+}
+#intro .btn a .text-white{
+    margin-right: 5px;
+}
+#intro .text-blue{
+    font-size: 25px;
+    margin-top:2rem;
+}
+#intro .img img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+#intro .card .text-center i{
+    font-size: 70px;
+    margin-top: 2rem;
+}
+#intro .small-card{
+    padding-bottom: 2rem;
+}
 
 /*regole planning*/
 #planning{
@@ -68,7 +154,27 @@
 }
 #planning .column{
     margin:2rem;
+    border-radius: 2rem;
 }
+#planning .img-container img {
+    width: 100%;
+}
+#planning .column h2{
+    margin: 4rem 0;
+    font-size: 40px;
+}
+#planning .column p{
+    line-height: 1.7rem;
+}
+#planning .planning2{
+    width: 100%;
+    padding: 1rem;
+}  
+#planning .text-black{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
 
 /*regole testimonial*/
 #testimonial .card{
@@ -112,6 +218,7 @@
     .container{
         max-width: 750px;
     }
+    
     #intro .cards{
         display: flex;
         flex-wrap: wrap;
@@ -124,6 +231,9 @@
     }
     #intro .card:first-child{
         width: calc(66.6666% - 1.5rem);
+    }
+    #intro .img {
+        margin-left: -50px;
     }
     #testimonial .card{
         display:flex;
@@ -148,10 +258,17 @@
     #aboutus .card{
         width: calc(50% - 1.5rem);
     }
+}
 /*DESKTOP*/
 @media screen and (min-width: 992px) {
     .container{
         max-width: 940px;
+    }
+    .site-header ul {
+        display: flex;
+    }
+    .site-header i{
+        display: none;
     }
     #intro .card:first-child{
         display: flex;
@@ -159,6 +276,12 @@
     #intro .card:first-child .box{
         width: 50%;
         height: 100%;
+    }
+    #intro .img{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-top: 40px;
     }
     #planning .columns{
         display:flex;
