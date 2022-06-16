@@ -42,6 +42,8 @@
 .padx-2 {
     padding: 0 2rem;
 }
+
+/*regole header*/ 
 .site-header{
     background-color: var(--primary-color);
     width: 100%;
